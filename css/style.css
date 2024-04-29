@@ -1,0 +1,284 @@
+@import url("font-awesome.min.css");
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* Default styles for WhatsApp */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #1dad10;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  line-height: 1; /* Reset line height to center vertically */
+}
+
+.whatsapp-icon {
+  width: 40px; /* Adjust the width to your preferred size */
+  height: 40px; /* Adjust the height to your preferred size */
+}
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media screen and (max-width: 767px) {
+  .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+  }
+}
+
+
+
+
+            /* Style the video container */
+/* Reset margin and padding for the video container */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+/* Style the video iframe */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+    
+      
+  
+  .img-box video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the video covers the entire container */
+    position: relative; /* Ensure proper positioning */
+    padding: 0;
+  }
+  
+  .white-text{
+    color: white;
+    margin-top: 20px;
+  }
+  /* Default styles for the video container */
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .about_section .about-content {
+      text-align: center;
+    }
+  }
+  
+  /* Set background image for section#about */
+
+  
+  /* Adjust footer position */
+  footer {
+      clear: both; /* Ensure the footer clears both floated and non-floated elements */
+      width: 100%; /* Ensure the footer spans the full width of the viewport */
+      background-color: #f7f7f7; /* Example background color for the footer */
+      padding: 20px 0; /* Example padding for the footer */
+      text-align: center; /* Center-align footer content */
+      position: relative; /* Ensure the footer's position is relative */
+      bottom: 0; /* Position the footer at the bottom of its containing element */
+  }
+/* services section */
+
+.service_section {
+  background-color: #0c0c0c;
+}
+
+.service_section h2 {
+  color: white; /* Text color for the heading */
+  text-align: center; /* Center the heading */
+  font-size: 36px; /* Adjust the font size as needed */
+  margin-bottom: 40px; /* Add some space below the heading */
+  padding-right: 45px; /* Add right padding */
+}
+
+.service_section .container {
+  max-width: 1200px; /* Limit the width of content to improve readability */
+  margin: 0 auto; /* Center the content horizontally */
+  padding-left: 80px; /* Add left padding */
+  padding-right: 0px; /* Add right padding */
+}
+
+.layout_padding {
+  padding: 50px; /* Adjust padding as needed */
+}
+
+.feature-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border: 5px solid #ccc;
+  border-radius: 1px;
+  overflow: hidden;
+  transition: width 0.1s, height 0.5s;
+}
+
+.feature-card:hover {
+  width: 250px;
+  height: 350px;
+}
+
+.card-title {
+  position: absolute;
+  top: 50%; /* Position the title vertically in the center */
+  left: 0; /* Position the title at the left of the card */
+  width: 100%; /* Make the title span the full width of the card */
+  transform: translateY(-50%); /* Adjust vertical position */
+  text-align: center;
+  z-index: 1;
+  transition: opacity 0.3s;
+  color: white; /* Change font color to white */
+  background-color: black; /* Add background color */
+  padding: 5px 10px; /* Add padding for better visibility */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.feature-card:hover .card-title {
+  opacity: 0;
+}
+
+.card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  font-size: 14px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+}
+
+.feature-card:hover .card-info {
+  transform: translateY(0);
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+.card-text {
+  margin-top: 10px;
+  display: none;
+}
+
+.feature-card:hover .card-text {
+  display: block;
+}
+
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px;
+}
+
+.feature-list li {
+  flex: 0 1 calc(33.33% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .feature-list li {
+    flex-basis: calc(50% - 20px);
+  }
+} 
+
+/* footer section */
+/* CSS for footer */
+/* footer section */
+.footer_section {
+  background-color: #ffffff; /* Change the background color of the footer */
+  padding-bottom: 20px; /* Adjust as needed */
+}
+
+.footer .container {
+  max-width: 1500px;
+  margin: auto;
+  font-size: 24px;
+}
+
+#footer h1 {
+  text-align: center;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-brand {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin below social links */
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: black;
+}
+
+.social-links a i {
+  font-size: 50px; /* Adjust icon size as needed */
+}
+
+.footer-links {
+  text-align: center; /* Center align footer links */
+}
+
+.contact-info {
+  margin-bottom: 10px; /* Add margin between contact info */
+}
+
+.contact-info i {
+  font-size: 24px; /* Adjust icon size */
+  margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.contact-text {
+  font-size: 18px; /* Adjust font size */
+}
+
