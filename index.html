@@ -144,6 +144,20 @@ nav ul li.highlight {
     }
 }
 
+.about-section video {
+    width: 100%; /* Make the video fill its container horizontally */
+    height: auto; /* Maintain the video's aspect ratio */
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+        .about-section video {
+            width: 100%; /* Adjust video width to fit smaller screens */
+            height: auto; /* Maintain the video's aspect ratio */
+            margin-bottom: 0;
+        }
+    }
+  
   
   /* Default styles for section#clients */
   #clients {
