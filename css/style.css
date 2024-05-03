@@ -203,7 +203,11 @@ body {
   color: white; /* Text color */
   text-align: center; /* Center-align text */
   padding: 10px; /* Add some padding */
-  display: none; /* Initially hide Click Me */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.click-me:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background color on hover */
 }
 
 
