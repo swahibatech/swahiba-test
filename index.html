@@ -78,28 +78,31 @@ nav ul li.highlight {
   z-index: 9999 !important; /* Set a higher z-index value */
 }
 
+.nav {
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Adjust top and bottom padding */
+  list-style: none; /* Remove default list styles */
+  text-align: center; /* Center-align menu items */
+  display: flex; /* Make the nav items appear horizontally */
+  justify-content: center; /* Center-align the nav items horizontally */
+}
+
 .nav-item {
-    border-right: 1px solid #ffffff; /* Add a border to the right of each nav item */
-    padding-right: 10px; /* Add some padding to separate the text from the border */
+  margin: 0 5px; /* Add space between menu items */
+  border-right: 1px solid #ffffff; /* Add a border to the right of each nav item */
+  padding-right: 10px; /* Add some padding to separate the text from the border */
 }
 
 /* Optional: Remove the border from the last nav item */
 .nav-item:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    margin: 0; /* Remove default margin */
-    padding: 10px 0; /* Adjust top and bottom padding */
-    list-style: none; /* Remove default list styles */
-    text-align: center; /* Center-align menu items */
-    display: flex; /* Make the nav items appear horizontally */
-    justify-content: center; /* Center-align the nav items horizontally */
-  }
-
   .nav-item {
     margin: 0 5px; /* Add space between menu items */
+    border-right: none; /* Remove the border from all nav items on mobile */
+    padding-right: 0; /* Remove the padding from all nav items on mobile */
   }
 }
 
