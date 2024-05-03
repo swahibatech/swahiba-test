@@ -31,17 +31,50 @@ body {
   height: 40px; /* Adjust the height to your preferred size */
 }
 
-/* Media query for smaller screens (e.g., smartphones) */
-@media screen and (max-width: 767px) {
-  .whatsapp_float {
-      width: 40px;
-      height: 40px;
-      bottom: 20px;
-      right: 10px;
-      font-size: 22px;
+@media screen and (max-width: 768px) {
+  .feature-card {
+    width: 100%; /* Expand cards to full width */
+    height: auto; /* Allow cards to adjust height based on content */
+    border: none; /* Remove border */
+    margin-bottom: 20px; /* Add some spacing between cards */
   }
 }
 
+
+/* Adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+  .feature-card {
+    width: 100%; /* Expand cards to full width */
+    height: auto; /* Allow cards to adjust height based on content */
+    border: none; /* Remove border */
+    margin-bottom: 20px; /* Add some spacing between cards */
+  }
+
+  .card-title,
+  .card-info {
+    position: static; /* Reset position */
+    width: auto; /* Reset width */
+    height: auto; /* Reset height */
+    padding: 10px; /* Adjust padding */
+    background-color: transparent; /* Remove background color */
+    border-radius: 0; /* Remove border radius */
+    color: black; /* Change font color */
+    text-align: left; /* Align text to left */
+    transition: none; /* Disable transitions */
+  }
+
+  .card-info {
+    display: none; /* Hide additional info by default */
+  }
+
+  .feature-card:hover .card-info {
+    display: block; /* Show additional info on hover */
+  }
+
+  .feature-list {
+    padding: 0; /* Remove padding */
+  }
+}
 
 
 

@@ -28,39 +28,47 @@
   <!-- Navigation bar -->
   <div class="header_bottom" style="background-color: #13111A; position: absolute; top: 0; width: 100%;">
     <div class="container">
-      <nav>
-        <!-- Navigation menu -->
-        <ul class="nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact us</a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+            <!-- Navigation menu -->
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact us</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-  </div> 
+</div>
+
 
 <!-- Video section -->
+<section id="home"
 <div class="hero_area">
   <div class="hero_bg_box">
     <div class="img-box">
       <video autoplay muted loop>
-        <source src="images/ed.webm" type="video/webm">
+        <source src="images/ed.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
   </div>
 </div>
+</section>
  
   <style>
+
+nav ul li.highlight {
+  background-color: blue; /* Default highlight color */
+ /* Increase width to cover the full width of the parent li */
+}
 
 .header_bottom{
   position: fixed !important; /* Fix the element at the top of the viewport */
@@ -68,6 +76,16 @@
   left: 0; /* Position it at the left */
   width: 100%; /* Make it span the full width of the viewport */
   z-index: 9999 !important; /* Set a higher z-index value */
+}
+
+.nav-item {
+    border-right: 1px solid #ffffff; /* Add a border to the right of each nav item */
+    padding-right: 10px; /* Add some padding to separate the text from the border */
+}
+
+/* Optional: Remove the border from the last nav item */
+.nav-item:last-child {
+    border-right: none;
 }
 
 .hero_area {
@@ -103,11 +121,11 @@
   
   /* Media query for mobile devices */
   @media screen and (max-width: 768px) {
-    .about-section video {
-      width: 100%; /* Adjust video width to fit smaller screens */
-      height: auto; /* Maintain the video's aspect ratio */
+        .about-section video {
+            width: 100%; /* Adjust video width to fit smaller screens */
+            height: auto; /* Maintain the video's aspect ratio */
+        }
     }
-  } 
   
   
   /* Default styles for section#clients */
@@ -145,11 +163,11 @@
     </div>
   </section>
 
-  <section  class="section about-section">
-
-         <video autoplay loop muted class="top-video">
-          <source src="images/V1.mp4" type="video/mp4">
-    </section>
+  <section class="section about-section">
+    <video autoplay loop muted class="top-video">
+        <source src="images/V1.mp4" type="video/mp4">
+    </video>
+</section>
 
   <section id="services">
     <div class="container">
@@ -525,6 +543,36 @@
     </div>
   </section>
 
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navItems = document.querySelectorAll('nav ul li');
+  
+    // Add default highlight to the Home link
+    navItems[0].classList.add('highlight');
+  
+    navLinks.forEach(function(navLink, index) {
+      navLink.addEventListener('click', function(event) {
+        event.preventDefault();
+  
+        // Remove highlight from all links
+        navItems.forEach(function(item) {
+          item.classList.remove('highlight');
+        });
+  
+        // Add highlight to the clicked link's parent li
+        navItems[index].classList.add('highlight');
+  
+        // Scroll to the corresponding section
+        const sectionId = navLink.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
+  </script>
 
 </body>
 
