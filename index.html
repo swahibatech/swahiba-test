@@ -79,14 +79,16 @@ nav ul li.highlight {
 }
 
 .nav {
-  margin: 0 ; /* Remove default margin */
+  margin: 0; /* Remove default margin */
   padding: 10px 0; /* Adjust top and bottom padding */
   list-style: none; /* Remove default list styles */
-  display: center; /* Make the nav items appear horizontally */
+  text-align: center; /* Center-align menu items */
+  display: flex; /* Make the nav items appear horizontally */
+  justify-content: center; /* Center-align the nav items horizontally */
 }
 
 .nav-item {
-  margin: 0; /* Add space between menu items */
+  margin: 0 5px; /* Add space between menu items */
   border-right: 1px solid #ffffff; /* Add a border to the right of each nav item */
   padding-right: 10px; /* Add some padding to separate the text from the border */
 }
@@ -98,13 +100,9 @@ nav ul li.highlight {
 
 @media screen and (max-width: 768px) {
   .nav-item {
-    margin: 0; /* Add space between menu items */
-    border-right: 1px solid #ffffff; /* Add a border to the right of each nav item */
-    padding-right: 10px; /* Add some padding to separate the text from the border */
-  }
-
-  .header_bottom {
-    width: 10%; /* Adjust width for mobile devices */
+    margin: 0 5px; /* Add space between menu items */
+    border-right: none; /* Remove the border from all nav items on mobile */
+    padding-right: 0; /* Remove the padding from all nav items on mobile */
   }
 }
 
