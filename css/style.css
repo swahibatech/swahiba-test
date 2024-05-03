@@ -216,6 +216,13 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .click-me:hover {
+    display: block;
+}
+}
+
+
 
 @media (max-width: 768px) {
   .feature-list li {
