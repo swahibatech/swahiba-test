@@ -645,6 +645,19 @@ nav ul li.highlight {
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+  const featureCards = document.querySelectorAll('.feature-card');
+
+  featureCards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      const clickMe = card.querySelector('.click-me');
+      if (clickMe) {
+        clickMe.style.display = 'none';
+      }
+    });
+  });
+});
   </script>
 
 </body>
