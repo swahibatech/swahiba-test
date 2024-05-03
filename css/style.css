@@ -33,49 +33,41 @@ body {
 
 @media screen and (max-width: 768px) {
   .feature-card {
-    width: 100%; /* Expand cards to full width */
-    height: auto; /* Allow cards to adjust height based on content */
-    border: none; /* Remove border */
-    margin-bottom: 20px; /* Add some spacing between cards */
-  }
+    position: relative; /* Position the click-me and card-info relative to feature-card */
 }
 
+.card-title {
+    position: relative; /* Position the card title relative to feature-card */
+}
 
-/* Adjustments for mobile devices */
+.click-me {
+    position: absolute; /* Position Click Me absolutely */
+    bottom: 0; /* Align it at the bottom of the card */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the full width of the card */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 10px; /* Add some padding */
+    display: none; /* Initially hide Click Me */
+}
+
+.card-info {
+    position: absolute; /* Position the card info absolutely */
+    top: 100%; /* Position it just below the card title */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the full width of the card */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 10px; /* Add some padding */
+    display: none; /* Initially hide card info */
+}
+
 @media screen and (max-width: 768px) {
-  .feature-card {
-    width: 100%; /* Expand cards to full width */
-    height: auto; /* Allow cards to adjust height based on content */
-    border: none; /* Remove border */
-    margin-bottom: 20px; /* Add some spacing between cards */
-  }
-
-  .card-title,
-  .card-info {
-    position: static; /* Reset position */
-    width: auto; /* Reset width */
-    height: auto; /* Reset height */
-    padding: 10px; /* Adjust padding */
-    background-color: transparent; /* Remove background color */
-    border-radius: 0; /* Remove border radius */
-    color: black; /* Change font color */
-    text-align: left; /* Align text to left */
-    transition: none; /* Disable transitions */
-  }
-
-  .card-info {
-    display: none; /* Hide additional info by default */
-  }
-
-  .feature-card:hover .card-info {
-    display: block; /* Show additional info on hover */
-  }
-
-  .feature-list {
-    padding: 0; /* Remove padding */
-  }
+    .click-me {
+        display: block; /* Show Click Me on mobile devices */
+    }
 }
-
+}
 
 
             /* Style the video container */
