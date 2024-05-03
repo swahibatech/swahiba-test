@@ -54,7 +54,7 @@
 <div class="hero_area">
   <div class="hero_bg_box">
     <div class="img-box">
-      <video autoplay loop muted playsinline>
+      <video autoplay loop muted playsinline preload="auto">
         <source src="images/ed.mp4">
         <source src="images/ed.webm" onerror="fallback(parentNode)">
       </video>
@@ -144,7 +144,7 @@ nav ul li.highlight {
     }
 }
 
-.about-section .about-video {
+.about-section video {
     width: 100%; /* Make the video fill its container horizontally */
     height: auto; /* Maintain the video's aspect ratio */
     margin-bottom: 0;
@@ -223,7 +223,7 @@ nav ul li.highlight {
   </section>
 
   <section class="section about-section">  
-    <video autoplay loop muted playsinline>
+    <video autoplay loop muted playsinline preload="auto">
       <source src="images/V1.mp4" type="video/mp4">
       <source src="images/V1.webm" type="video/webm">
     </video>
