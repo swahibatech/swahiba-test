@@ -147,7 +147,8 @@ nav ul li.highlight {
 .about-section video {
     width: 100%; /* Make the video fill its container horizontally */
     height: auto; /* Maintain the video's aspect ratio */
-    margin-bottom: 0; /* Adjust margin */
+    object-fit: cover; /* Ensure the video covers the entire container */
+    position: relative; /* Ensure proper positioning */
   }
   
   /* Media query for mobile devices */
