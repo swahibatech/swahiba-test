@@ -107,9 +107,7 @@ body {
   padding-right: 0px; /* Add right padding */
 }
 
-.layout_padding {
-  padding: 20px; /* Adjust padding as needed */
-}
+
 
 .feature-card {
   position: relative;
@@ -182,9 +180,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  max-width: 1000px;
+  max-width: 3000px;
   margin: 0 auto;
-  padding: 70px;
+  padding: 40px;
 }
 
 .feature-list li {
