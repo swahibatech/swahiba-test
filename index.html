@@ -88,6 +88,20 @@ nav ul li.highlight {
     border-right: none;
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Adjust top and bottom padding */
+    list-style: none; /* Remove default list styles */
+    text-align: center; /* Center-align menu items */
+  }
+
+  .nav-item {
+    display: inline-block; /* Display menu items horizontally */
+    margin: 0 5px; /* Add space between menu items */
+  }
+}
+
 .hero_area {
   position: relative; /* Ensure positioning context for absolute positioning of nav */
   overflow: hidden; /* Hide any overflow */
@@ -126,6 +140,19 @@ nav ul li.highlight {
             height: auto; /* Maintain the video's aspect ratio */
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .nav-item {
+            margin-bottom: 10px;
+        }
+    }
+
   
   
   /* Default styles for section#clients */
@@ -180,6 +207,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/AT.jpg" alt="Image 1" style="width: 100%; height: 100%;">
             <div class="card-title">Automated Solutions</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -195,6 +223,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/WD.jpg" alt="Image 2" style="width: 100%; height: 100%;">
             <div class="card-title">Web Development</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -210,6 +239,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/R.jpg" alt="Image 3" style="width: 100%; height: 100%;">
             <div class="card-title">Communications</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -225,6 +255,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/SMM.png" alt="Image 4" style="width: 100%; height: 100%;">
             <div class="card-title">Social Media Account Management</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -240,6 +271,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/GrD.jpg" alt="Image 5" style="width: 100%; height: 100%;">
             <div class="card-title">Graphic Designs</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -255,6 +287,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/IM.jfif" alt="Image 6" style="width: 100%; height: 100%;">
             <div class="card-title">Internet Marketing</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -270,6 +303,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/IT.jpg" alt="Image 7" style="width: 100%; height: 100%;">
             <div class="card-title">IT Equipment Supplies</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -285,6 +319,7 @@ nav ul li.highlight {
           <div class="feature-card">
             <img src="images/AI.jpg" alt="Image 8" style="width: 100%; height: 100%;">
             <div class="card-title">Artificial Intelligence</div>
+            <div class="click-me">Click Me</div>
             <div class="card-info">
               <div class="card-icon" style="--color: 174, 77%, 50%">
                 <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -301,6 +336,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/SD.jpg" alt="Image 9" style="width: 100%; height: 120%;">
         <div class="card-title">Software Development</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -317,6 +353,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/MD.jpg" alt="Image 10" style="width: 100%; height: 100%;">
         <div class="card-title">Mobile Development</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -332,6 +369,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/DA.jpg" alt="Image 11" style="width: 100%; height: 100%;">
         <div class="card-title">Data Analysis</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -347,6 +385,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/UI.jpg" alt="Image 12" style="width: 100%; height: 100%;">
         <div class="card-title">User Experience (UX) Design</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -362,6 +401,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/CMS.jpg" alt="Image 13" style="width: 100%; height: 100%;">
         <div class="card-title">Cloud-Computing Solutions</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -377,6 +417,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/C.jpg" alt="Image 14" style="width: 100%; height: 100%;">
         <div class="card-title">Cybersecurity</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -392,6 +433,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/EC.jfif" alt="Image 15" style="width: 100%; height: 100%;">
         <div class="card-title">E-Commerce Development</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -407,6 +449,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/CM.jpg" alt="Image 16" style="width: 100%; height: 100%;">
         <div class="card-title">Content Marketing</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -422,6 +465,7 @@ nav ul li.highlight {
       <div class="feature-card">
         <img src="images/PM.jpg" alt="Image 17" style="width: 100%; height: 100%;">
         <div class="card-title">Project Management</div>
+        <div class="click-me">Click Me</div>
         <div class="card-info">
           <div class="card-icon" style="--color: 174, 77%, 50%">
             <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -436,6 +480,7 @@ nav ul li.highlight {
         <div class="feature-card">
           <img src="images/HRC.jpg" alt="Image 18" style="width: 100%; height: 100%;">
           <div class="card-title">Human Resources Consulting</div>
+          <div class="click-me">Click Me</div>
           <div class="card-info">
             <div class="card-icon" style="--color: 174, 77%, 50%">
               <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -450,6 +495,7 @@ nav ul li.highlight {
         <div class="feature-card">
           <img src="images/WebD.jpg" alt="Image 19" style="width: 100%; height: 100%;">
           <div class="card-title">Web Design</div>
+          <div class="click-me">Click Me</div>
           <div class="card-info">
             <div class="card-icon" style="--color: 174, 77%, 50%">
               <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -464,6 +510,7 @@ nav ul li.highlight {
         <div class="feature-card">
           <img src="images/Multimedia.jpg" alt="Image 20" style="width: 100%; height: 100%;">
           <div class="card-title">Multimedia Marketing</div>
+          <div class="click-me">Click Me</div>
           <div class="card-info">
             <div class="card-icon" style="--color: 174, 77%, 50%">
               <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -478,6 +525,7 @@ nav ul li.highlight {
         <div class="feature-card">
           <img src="images/Create.jfif" alt="Image 21" style="width: 100%; height: 100%;">
           <div class="card-title">Creative Design</div>
+          <div class="click-me">Click Me</div>
           <div class="card-info">
             <div class="card-icon" style="--color: 174, 77%, 50%">
               <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -493,6 +541,7 @@ nav ul li.highlight {
         <div class="feature-card">
           <img src="images/ACM.jpg" alt="Image 22" style="width: 100%; height: 100%;">
           <div class="card-title">Advocacy and Campaign Management</div>
+          <div class="click-me">Click Me</div>
           <div class="card-info">
             <div class="card-icon" style="--color: 174, 77%, 50%">
               <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -507,6 +556,7 @@ nav ul li.highlight {
         <div class="feature-card">
           <img src="images/DB.jfif" alt="Image 23" style="width: 100%; height: 100%;">
           <div class="card-title">Database Programming</div>
+          <div class="click-me">Click Me</div>
           <div class="card-info">
             <div class="card-icon" style="--color: 174, 77%, 50%">
               <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
@@ -522,6 +572,7 @@ nav ul li.highlight {
         <div class="feature-card">
           <img src="images/Bank.webp" alt="Image 24" style="width: 100%; height: 100%;">
           <div class="card-title">Financial Banking Systems</div>
+          <div class="click-me">Click Me</div>
           <div class="card-info">
             <div class="card-icon" style="--color: 174, 77%, 50%">
               <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
