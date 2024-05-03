@@ -128,8 +128,12 @@ nav ul li.highlight {
 
 @media screen and (max-width: 768px) {
   .img-box video {
-  padding: 20px;
-}
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the video covers the entire container */
+    position: relative; /* Ensure proper positioning */
+    padding-top: 200px;
+  }
 
 }
 
