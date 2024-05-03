@@ -211,15 +211,6 @@ body {
       cursor: pointer; /* Add cursor pointer */
   }
 
-  .click-me:hover {
-      background-color: rgba(0, 0, 0, 0.7); /* Darker background color on hover */
-  }
-}
-
-@media (max-width: 768px) {
-  .click-me:hover {
-    display: block;
-}
 }
 
 
