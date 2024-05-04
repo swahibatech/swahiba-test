@@ -667,9 +667,27 @@ nav ul li.highlight {
       if (clickMe) {
         clickMe.style.display = 'none';
       }
+      // Make other "click-me" elements visible
+      featureCards.forEach(function(otherCard) {
+        if (otherCard !== card) {
+          const otherClickMe = otherCard.querySelector('.click-me');
+          if (otherClickMe) {
+            otherClickMe.style.display = 'block'; // or 'initial', or whatever its default display value is
+          }
+        }
+      });
+    });
+
+    // Handle unhover event
+    card.addEventListener('mouseout', function() {
+      const clickMe = card.querySelector('.click-me');
+      if (clickMe) {
+        clickMe.style.display = 'block'; // or 'initial', or whatever its default display value is
+      }
     });
   });
 });
+
   </script>
 
 </body>
@@ -689,7 +707,7 @@ nav ul li.highlight {
           <!-- Phone -->
           <div class="contact-info">
             <i class="fas fa-phone"></i>
-            <span class="contact-text">+267 7243 0053 / 75 950 693</span> <!-- Contact phone number -->
+            <span class="contact-text"><a href="tel:72430053">+267 7243 0053</a> / <a href="tel:75950693"> 75 950 693</a></span> <!-- Contact phone number -->
           </div>
 
           <!-- Email -->
